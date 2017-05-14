@@ -1,0 +1,24 @@
+Assume you have installed ansible, supervisord, postgresql, psycopg2
+on your system
+
+  $ ./bin/develop start
+  $ ./bin/manage test
+  $ ./bin/manage runserver
+
+
+./bin/develop start
+
+  prepare the development environment and make sure postgresql started
+
+./bin/develop reset
+
+  when you messed up your database, this will make sure it is dropped
+  and then recreate it
+
+./bin/develop stop
+
+  make sure postgresql stopped
+
+./bin/develop clean
+
+   stop and then clean up the develop directory
